@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My Vietnamese food website - Form</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/origin.css">
+</head>
+
+<body>
+	<div class="container-fluid border border-dark border-2">
+		<header>
+			<div class="row">
+				<div class="col-12">
+					<nav id="form">
+						<div class="col-12 text-center">
+							<!-- navbar -->
+
+							<a href="index.html"
+							title="Some delicious Vietnamese food.">
+							Homepage</a> | <b> Form</b> | <a href="info.html" title="My personal information.">About me</a>
+							| <a href="contact.html" title="Contact me.">Contact</a>
+
+							<!-- navbar -->
+						</div> <!-- col -->
+					</nav>
+					<h1 class="text-center my-3 text-primary">Welcome to my Vietnamese food website!</h1>
+				</div> <!-- col-12 -->
+			</div> <!-- row -->
+		</header>
+
+		<main id="content">
+			<div class="row border-bottom border-primary border-2">
+				<div class="col-12 p-3">
+					<h2 class = "heading-2">Submit your favourite Vietnamese food</h2>
+					<p>Hey foodies! Are you obsessed with Vietnamese food? We're hungry for your culinary creations! 
+						Whether it's the irresistible crunch of bánh xèo or the aromatic goodness of bún bò Huế, 
+						we're on a quest to showcase the best of Vietnamese cuisine. Share your beloved recipes, cooking tips, 
+						and foodie adventures with us, and let's spread the love for Vietnamese gastronomy together. 
+						Join our community and let's turn our cravings into culinary masterpieces!</p>
+					<h2 class = "heading-2">Form to submit a new Vietnamese food</h2>
+				</div>
+			</div>
+			<form action="mailto:johnsmith@mailinator.com" method="post" enctype="text/plain">
+				<div class="row">
+
+					<div class="col-12 col-lg-12">
+						<fieldset class="border rounded bg-light my-3 p-3">
+							<div class = "row">
+								<div class="col-12 col-lg-6">
+									<h3 class = "heading-3">Details of the food</h3>
+
+									<h4 class = "form_heading_4">Food name</h4>
+									<input type="text" name="title" id="title" size="50"><br>
+									<h4 class = "form_heading_4">Receipt</h4>
+									<table id="pagemenu">
+										<colgroup>
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+										</colgroup>
+										<tr>
+											<th>Ingredients</th>
+											<th>Instructions</th>
+											<th>Tips & tricks (if any)</th>
+										</tr>
+										<tr>
+											<td><textarea rows="6" style="width: 100%;"></textarea></td>
+											<td><textarea rows="6" style="width: 100%;"></textarea></td>
+											<td><textarea rows="6" style="width: 100%;"></textarea></td>
+										</tr>
+									</table>
+									<h4 class = "form_heading_4">Review</h4>
+									<textarea cols="50" rows="10" name="story" id="story"></textarea>
+								</div>
+								
+								<div class="col-12 col-lg-6">
+									<h3 class = "heading-3">Images</h3>
+									<table>
+										<tr>
+											<th>Image 1</th>
+											<th>Image 2</th>
+										</tr>
+										<tr>
+											<td>
+												<div class="file-input-container">
+													<div class="placeholder">Click to select an image</div>
+													<input type="file" class="file-input" accept="image/*">
+												</div>
+											</td>
+											<td>
+												<div class="file-input-container">
+													<div class="placeholder">Click to select an image</div>
+													<input type="file" class="file-input" accept="image/*">
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col-12 col-lg-12">
+						<fieldset class="border rounded bg-light my-3 p-3">
+							<h4 class = "form_heading_4">To what extends do you like the food?</h4>
+								<input type="radio" name="rating" id="v1" value="1">
+								<label for="v1">Love</label><br>
+								<input type="radio" name="rating" id="v2" value="2">
+								<label for="v2">Enjoy</label><br>
+								<input type="radio" name="rating" id="v3" value="3">
+								<label for="v3">Like</label><br>
+								<input type="radio" name="rating" id="v4" value="4">
+								<label for="v4">Normal</label><br>
+								<input type="radio" name="rating" id="v5" value="5">
+								<label for="v5">Do not like</label>
+						
+						</fieldset>
+
+
+						<fieldset class="border rounded bg-light my-3 p-3">
+							<h3 class = "heading-3">Personal information</h3>
+							<h4 class = "form_heading_4">Your name</h4>
+							<input type="text" name="name" id="name" size="50"><br>
+							<h4 class = "form_heading_4">Your e-mail address</h4>
+							<input type="email" name="email" id="email" size="50"><br>
+							<input type="checkbox" name="newsletter" id="newsletter" value="yes">
+							<label for="newsletter">I cooked this food before.</label>
+
+						</fieldset>
+						<fieldset class="border rounded bg-light my-3 p-3">
+							<h4 class = "form_heading_4">Send</h4>
+							<input type="submit" value="Submit" >
+							<input type="reset" value="Reset" >
+						</fieldset>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-12">
+					<p>These foods are already on my list:</p>
+					<nav>
+						<ol>
+							<li><a href="index.html#pho">Phở</a></li>
+							<li><a href="index.html#comtam">Cơm tấm</a></li>
+							<li><a href="index.html#buncha">Bún chả</a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<footer style="margin: 0 auto; width: fit-content; text-align: center;">
+		<p>Page 2</p>
+	</footer>
+</body>
+
+</html>
